@@ -16,6 +16,13 @@
         @click="refresh"
         >{{ !this.btnCooldown ? "Refresh" : "Please Wait" }}</v-btn
       >
+      <v-avatar
+        color="#7289DA"
+        class="ml-4"
+        size="1.1em"
+        v-if="!loading"
+        ><v-icon>mdi-discord</v-icon></v-avatar
+      >
     </v-app-bar>
     <v-main>
       <v-container class="pa-0" fluid v-if="!loading">
@@ -171,6 +178,13 @@
           target="_blank"
           rel="noopener noreferrer"
           >Nomad</a
+        >
+        | Contributions by
+        <a
+          href="https://www.roleplay.co.uk/profile/14750-gordon/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Gordon</a
         >
         | Data and API provided by
         <a
